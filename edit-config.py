@@ -30,4 +30,5 @@ if __name__ == '__main__':
                          device_params={'name':"csr"})
     # Pretty print the XML reply
     xmlDom = xml.dom.minidom.parseString( str( m.edit_config(data, target='running') ) )
+    print (xmlDom.toprettyxml( indent = "  " ))
   
